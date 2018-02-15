@@ -1,0 +1,20 @@
+// В этом файле должны быть стили для БЭМ-блока page-copiright, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-copiright {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #4d4d4d;
+  color: #808080;
+  font-size: 15px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.4;
+    padding: 10px 0;
+  }
+}
