@@ -9,14 +9,11 @@
   display: flex;
   margin-bottom: 40px;
 
-  &__info {
-    padding: 40px 140px 40px 54px;
-  }
+  background-image: url(../img/caption-banner-img.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 40px 510px 40px 54px;
 
-  &__image {
-    flex-basis: 360px;
-    flex-shrink: 0;
-  }
 
   &__title {
     color: #000000;
@@ -37,5 +34,32 @@
     p {
       margin: 0;
     }
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    padding: 40px 300px 40px 54px;
+    background-size: 260px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: ($screen-md)) {
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-image: none;
   }
 }

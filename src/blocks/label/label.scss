@@ -32,6 +32,11 @@ $border-radius:               3px !default;
   border-radius: 30px;
   min-width: 165px;
 
+  @media (max-width: ($screen-lg - 1)) {
+    font-size: 14px;
+    min-width: 130px;
+  }
+
   &:hover,
   &:focus {
     color: $text-color;

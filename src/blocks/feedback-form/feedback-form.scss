@@ -9,16 +9,31 @@
 
   .feedback-form__field {
     @include col();
-    @include col(lg, 4);
+    @include col(md, 4);
     margin-top: 0;
+  }
+
+  .field-checkbox {
+    @include col();
+    @media (max-width: ($screen-lg - 1)) {
+      font-size: 14px;
+    }
   }
 
   .field-text__input {
     border-color: #fff;
+    color: #fff;
     background: transparent;
 
     &::placeholder {
       color: #fff;
+      transition: opacity 0.3s;
+    }
+
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
     }
   }
 }

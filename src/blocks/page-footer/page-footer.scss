@@ -17,6 +17,9 @@
   &__logo {
     @include col();
     @include col(xl, 3);
+    @media (max-width: 810px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__info {
@@ -30,5 +33,8 @@
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    @media (max-width: 810px) {
+      flex-direction: column;
+    }
   }
 }

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   flex-basis: 100%;
+  flex-wrap: wrap;
 
   &__item {
     font-size: 18px;
@@ -24,21 +25,44 @@
 
     &--call {
       margin-left: auto;
+      margin-right: 0;
+      padding-left: 0;
     }
   }
 
-  &--dark {
+  &--header {
     #{$block-name}__item {
       .icon {
         fill: #5b646a;
       }
+      @media (max-width: 810px) {
+        margin-bottom: 20px;
+        &--call {
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+      @media (max-width: 589px) {
+        flex-basis: 100%;
+      }
     }
+
   }
 
-  &--width {
+  &--footer {
     #{$block-name}__item {
       .icon {
         fill: #fff;
+      }
+      @media (max-width: 810px) {
+        margin-bottom: 20px;
+        &--call {
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+      @media (max-width: 589px) {
+        flex-basis: 100%;
       }
     }
   }
