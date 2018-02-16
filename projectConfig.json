@@ -61,7 +61,22 @@
     "tooltip": [],
     "main-info": [],
     "footer-links": [],
-    "page-copiright": []
+    "page-copiright": [],
+    "caption-banner": [],
+    "box": [],
+    "page-feedback": [],
+    "feedback-form": [],
+    "main-section": [],
+    "page-title": [],
+    "docs-gallery": [],
+    "page-part": [],
+    "catalog": [],
+    "catalog-card": [],
+    "more-category": [],
+    "category-card": [],
+    "articles": [],
+    "two-pictures": [],
+    "table-relative": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

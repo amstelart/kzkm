@@ -24,7 +24,7 @@ $border-radius:               3px !default;
   vertical-align: middle;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 16px;
   font-family: inherit;
   line-height: $line-height;
   text-decoration: none;
@@ -35,6 +35,7 @@ $border-radius:               3px !default;
   background-color: $gray-lightest;
   background-image: none;
   cursor: pointer;
+  transition: all 0.4s;
 
   &:hover,
   &:focus {
@@ -69,23 +70,62 @@ $border-radius:               3px !default;
 
 
 
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
+  &--main {
+    color: #fff;
+    background-color: $color-main;
+    border: 1px solid $color-main;
+    min-width: 220px;
 
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken($color-main, 10%);
+      border-color: darken($color-main, 12%);
+    }
 
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--gray {
+    color: #fff;
+    background-color: #5b646a;
+    border-color: #5b646a;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--black-outline {
+    color: #5b646a;
+    background-color: transparent;
+    border-color: #5b646a;
+    min-width: 220px;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--white-outline {
+    min-width: 220px;
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
+  }
+
+  &--block {
+    width: 100%;
+  }
 }

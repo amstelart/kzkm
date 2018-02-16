@@ -1,0 +1,24 @@
+// В этом файле должны быть стили для БЭМ-блока feedback-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.feedback-form {
+
+  $block-name:                &; // #{$block-name}__element
+  @include row;
+
+  .feedback-form__field {
+    @include col();
+    @include col(lg, 4);
+    margin-top: 0;
+  }
+
+  .field-text__input {
+    border-color: #fff;
+    background: transparent;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}

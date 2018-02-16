@@ -290,6 +290,17 @@ h6 {
   font-size: $font-size--h6;
 }
 
+a {
+	transition: all 0.4s;
+	color: inherit;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $color-main;
+	}
+}
+
 // .p,
 p,
 ul,

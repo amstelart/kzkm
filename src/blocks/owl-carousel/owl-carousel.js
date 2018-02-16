@@ -1,6 +1,6 @@
 // $(document).ready(function(){
-
-//   $("#owl-carousel-demo").owlCarousel({
+//
+//   $("owl-carousel").owlCarousel({
 //     items: 3,
 //     nav: true,
 //     loop: true,
@@ -29,5 +29,5 @@
 //       }
 //     }
 //   });
-
+//
 // });

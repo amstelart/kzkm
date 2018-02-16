@@ -8,8 +8,7 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 
 .breadcrumbs {
 
-  $block-name:                &;
-  // #{$block-name}__element
+  $block-name:                &;// #{$block-name}__element
 
   padding: 0;
   list-style: none;
@@ -21,20 +20,30 @@ $text-color:                  hsl(0, 0%, 10%) !default;
     white-space: nowrap;
 
     &:not(:last-child):after {
-      content: '>';
+      content: '›';
       display: inline-block;
+      font-size: 18px;
       margin-left: 0.8em;
       color: $gray;
+    }
+
+    span {
+      color: #d30920;
+
+      &:hover,
+      &:focus {
+        color: #d30920;
+      }
     }
   }
 
   &__link {
-    color: $text-color;
+    color: #5b646a;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $text-color;
+      color: $color-main;
       text-decoration: none;
     }
   }

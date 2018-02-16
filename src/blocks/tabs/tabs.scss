@@ -18,8 +18,19 @@ $field-padding-horizontal:    0.7em !default;
 
   $block-name:                &; // #{$block-name}__element
 
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  &__gallery {
+    margin-bottom: 25px;
+  }
 
   &__links {
     margin: 0;
@@ -28,33 +39,48 @@ $field-padding-horizontal:    0.7em !default;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
     cursor: pointer;
 
     .no-js & {
       display: none;
     }
 
-    &:after {
-      content: '';
-      flex-grow: 1;
-      height: 1px;
-      background-color: $border-color;
-    }
   }
 
   &__link-wrap {
     position: relative;
-    border: 1px solid $border-color;
+    margin: 0 10px;
+
 
     &:not(:last-child) {
       border-right: none;
     }
 
+    @media (max-width: ($screen-md - 1)) {
+      flex-basis: 100%;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: ($screen-lg - 1)) {
+      font-size: 14px;
+    }
+
     &--active {
 
       #{$block-name}__link {
-        color: $text-color;
-        background-color: #fff;
+        color: #fff;
+        background-color: $color-main;
+
+        &:hover,
+        &:focus {
+          background-color: $color-main;
+          color: #fff;
+        }
       }
     }
   }
@@ -62,21 +88,21 @@ $field-padding-horizontal:    0.7em !default;
   &__link {
     display: block;
     padding: $field-padding-vertical $field-padding-horizontal;
-    color: $text-color--muted;
+    color: #000;
     text-decoration: none;
-    background-color: $gray-lightest;
+    background-color: #c8c8c8;
+    border-radius: 6px;
 
     &:hover,
     &:focus {
-      color: $text-color--muted;
+      color: #000;
+      background-color: lighten(#c8c8c8, 5%);
     }
   }
 
   &__content-wrapper {
     display: block;
-    padding: $field-padding-vertical $field-padding-horizontal;
-    border: 1px solid $border-color;
-    border-top: none;
+    padding: 20px 0 0 0;
   }
 
   &__content-item {
@@ -93,4 +119,3 @@ $field-padding-horizontal:    0.7em !default;
     }
   }
 }
-

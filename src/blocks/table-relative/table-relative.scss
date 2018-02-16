@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока table-relative, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.table-relative {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+  margin: $line-height 0;
+
+  caption {
+    padding: 35px;
+    text-align: center;
+    caption-side: bottom;
+    font-size: 16px;
+    line-height: 1em;
+    color: #a0a0a0;
+  }
+
+  td,
+  th {
+    padding: 1.6em 0.9em 1.6em;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e4;
+    font-size: 18px;
+
+    // &:not(:first-child) {
+    //   border-left: 1px solid $border-color;
+    // }
+  }
+
+  th {
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .th-small {
+    vertical-align: bottom;
+    color: #000;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .td-item {
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+
+    .icon {
+      vertical-align: middle;
+    }
+  }
+
+  &__header {
+    th {
+      background: $color-main;
+      color: #fff;
+      font-size: 26px;
+      line-height: 1.2;
+      padding: 15px 15px;
+      font-weight: 300;
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+
+  &__body {}
+
+  &__footer {}
+
+}

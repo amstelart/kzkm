@@ -8,6 +8,8 @@
 
   background: $white;
   color: #5b646a;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   &__inner {
     @include row;

@@ -37,6 +37,10 @@
   &__container {
     @include container;
   }
+
+  &__breadcrumbs {
+    border-bottom: 1px solid #d7d7d7;
+  }
 }
 
 *,
@@ -93,4 +97,28 @@ svg {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.list {
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+    &:before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      background: $color-main;
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      top: 5px;
+      left: 0;
+    }
+  }
 }

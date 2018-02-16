@@ -16,23 +16,27 @@ $line-height:                 1.375em !default;
   &__btn {
     display: inline-block;
     padding: 0;
-    width: $line-height;
-    height: $line-height;
+    width: 22px;
+    height: 22px;
     overflow: hidden;
     border: none;
     color: transparent;
     background: transparent;
-    background-image: svg-load('../blocks/tooltip/bg-img/info.svg', fill='#{$gray}');
+    background-image: svg-load('../blocks/tooltip/bg-img/icon-question.svg', fill='#000');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1em;
+    background-size: 22px;
+    cursor: pointer;
+    outline: none;
   }
 
   &__bubble {
     position: absolute;
+    font-size: 14px;
+    font-weight: 400;
     top: calc(100% + 8px);
     left: 0;
-    min-width: 150px;
+    min-width: 350px;
     max-width: 250px;
     padding: 10px 15px;
     background-color: #fff;
