@@ -8,7 +8,36 @@ $( document ).ready(function() {
     center: true,
     responsive : {
       0 : {
-        items: 1,
+        items: 2,
+        loop: true,
+        center: true,
+      },
+      480 : {
+        items: 3,
+      },
+      768 : {
+        items: 3,
+      },
+      992 : {
+        items: 3,
+      },
+      1200 : {
+        items: 3,
+      },
+      1800 : {
+        items: 3,
+      }
+    }
+  });
+  $(".doc-carousel").owlCarousel({
+    items: 3,
+    nav: false,
+    margin: 20,
+    loop: true,
+    center: true,
+    responsive : {
+      0 : {
+        items: 2,
         loop: true,
         center: true,
       },
