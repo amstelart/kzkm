@@ -40,6 +40,7 @@
 
   &__breadcrumbs {
     border-bottom: 1px solid #d7d7d7;
+    overflow: hidden;
   }
 }
 
@@ -121,4 +122,11 @@ img {
       left: 0;
     }
   }
+}
+
+.demo-main-slider {
+  background: #444;
+  display: block;
+  height: 622px;
+  margin-bottom: 40px;
 }

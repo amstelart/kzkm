@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>NTH start project</title>
-  <meta name="description" content="">
-  @@include('_include/page_head.html')
+  <meta name="description" content=""> @@include('_include/page_head.html')
 </head>
 
 <body>
@@ -14,9 +13,7 @@
 
     <div class="page__content">
 
-      @@include('blocks/page-header/page-header.html')
-
-      @@include('blocks/main-nav/main-nav.html')
+      @@include('blocks/page-header/page-header.html') @@include('blocks/main-nav/main-nav.html')
 
       <main role="main">
 
@@ -34,55 +31,134 @@
 
         <div class="page__container">
           <h1 class="page-title">Калькулятор композитной арматуры</h1>
-          <p>Введите необходимое число погонных метров арматуры. Калькулятор рассчитает общий вес стальной и композитной арматуры,
-          количество товарных позиций в бухтах и прутах и предварительную стоимость заказа.</p>
+          <p>Введите необходимое число погонных метров арматуры. Калькулятор рассчитает общий вес стальной и композитной арматуры, количество товарных позиций в бухтах и прутах и предварительную стоимость заказа.</p>
 
-          <table class="table">
-            <thead class="table__header">
-              <tr>
-                <th>Длина арматуры, п.м</th>
-                <th>Металлическая арматура</th>
-                <th>Общий вес, кг</th>
-                <th>Композитная арматура</th>
-                <th>Общий вес, кг</th>
-                <th>Вид отгрузки</th>
-                <th>Кол-во единиц</th>
-                <th>Цена за п.м, руб</th>
-                <th>Стоимость</th>
-              </tr>
-            </thead>
-            <tbody class="table__body">
-              <tr>
-                <td>Васисуалий</td>
-                <td>АIII-8 (диаметр, 8 мм; вес, 0.4 кг/п.м.:)</td>
-                <td>6</td>
-                <td>АСК-6 (диаметр, 6 мм; вес, 0.06 кг/п.м.:)
-                </td>
-                <td>3</td>
-                <td>Бухта 50м</td>
-                <td>1</td>
-                <td>13,2</td>
-                <td>660</td>
-              </tr>
-            </tbody>
-            <tfoot class="table__footer">
-              <tr>
-                <td></td>
-                <td>Металлическая арматура</td>
-                <td>157 кг</td>
-                <td>Композитная арматура</td>
-                <td>21 кг</td>
-                <td>Бухта 50м</td>
-                <td colspan="2"></td>
-                <td colspan="2">Итого: 1350</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="table-mobile-scroll table-mobile-scroll__calc">
+            <table class="table-calc">
+              <thead class="table-calc__header">
+                <tr>
+                  <th>Длина арматуры,<br> п.м</th>
+                  <th>Металлическая<br> арматура</th>
+                  <th>Общий вес, кг</th>
+                  <th>Композитная<br> арматура</th>
+                  <th>Общий вес, кг</th>
+                  <th>Вид отгрузки</th>
+                  <th>Кол-во<br> единиц</th>
+                  <th>Цена за<br> п.м, руб</th>
+                  <th>Стоимость</th>
+                </tr>
+              </thead>
+              <tbody class="table-calc__body">
+                <tr>
+                  <td>
+                    <label class="field-text table-calc__field">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="number" value="15" id="" name="">
+                      </span>
+                    </label>
+                  </td>
+                  <td>
+                    <div class="table-calc__cell-title">АIII-8</div>(диаметр, 8 мм; вес, 0.4 кг/п.м.:)</td>
+                  <td>6</td>
+                  <td>
+                    <div class="table-calc__cell-title">АСК-6</div>(диаметр, 6 мм; вес, 0.06 кг/п.м.:)
+                  </td>
+                  <td>3</td>
+                  <td>Бухта 50м</td>
+                  <td>1</td>
+                  <td>13,2</td>
+                  <td>660</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="field-text table-calc__field">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="number" value="15" id="" name="">
+                      </span>
+                    </label>
+                  </td>
+                  <td>
+                    <div class="table-calc__cell-title">АIII-8</div>(диаметр, 8 мм; вес, 0.4 кг/п.м.:)</td>
+                  <td>6</td>
+                  <td>
+                    <div class="table-calc__cell-title">АСК-6</div>(диаметр, 6 мм; вес, 0.06 кг/п.м.:)
+                  </td>
+                  <td>3</td>
+                  <td>Бухта 50м</td>
+                  <td>1</td>
+                  <td>13,2</td>
+                  <td>660</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="field-text table-calc__field">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="number" value="15" id="" name="">
+                      </span>
+                    </label>
+                  </td>
+                  <td>
+                    <div class="table-calc__cell-title">АIII-8</div>(диаметр, 8 мм; вес, 0.4 кг/п.м.:)</td>
+                  <td>6</td>
+                  <td>
+                    <div class="table-calc__cell-title">АСК-6</div>(диаметр, 6 мм; вес, 0.06 кг/п.м.:)
+                  </td>
+                  <td>3</td>
+                  <td>Бухта 50м</td>
+                  <td>1</td>
+                  <td>13,2</td>
+                  <td>660</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="field-text table-calc__field">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="number" value="15" id="" name="">
+                      </span>
+                    </label>
+                  </td>
+                  <td>
+                    <div class="table-calc__cell-title">АIII-8</div>(диаметр, 8 мм; вес, 0.4 кг/п.м.:)</td>
+                  <td>6</td>
+                  <td>
+                    <div class="table-calc__cell-title">АСК-6</div>(диаметр, 6 мм; вес, 0.06 кг/п.м.:)
+                  </td>
+                  <td>3</td>
+                  <td>
+                    <label class="field-select table-calc__field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>6м пруток</option>
+                          <option>10м пруток</option>
+                          <option>15м пруток</option>
+                        </select>
+                      </div>
+                    </label>
+                  </td>
+                  <td>1</td>
+                  <td>13,2</td>
+                  <td>660</td>
+                </tr>
+              </tbody>
+              <tfoot class="table-calc__footer">
+                <tr>
+                  <td></td>
+                  <td>Металлическая<br> арматура</td>
+                  <td><b>157 кг</b></td>
+                  <td><span>Композитная<br> арматура</span></td>
+                  <td><span>21 кг</span></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="2" class="table-calc__price">Итого: <span>1350</span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
           <h3>Расчет АСК в калькуляторе предварительный</h3>
-          <p>Для уточнения ончательных параметров заказа, его стоимость, сроки отгрузки и вариант доставки оставьте заявку
-          или уточните у менеджера по телефонам: +7 (919) 174-10-10, +7 (4712) 308-333,</p>
+          <p>Для уточнения ончательных параметров заказа, его стоимость, сроки отгрузки и вариант доставки оставьте заявку или уточните у менеджера по телефонам: +7 (919) 174-10-10, +7 (4712) 308-333,</p>
           <p><a class="btn btn--main" href="#">Оставить заявку</a></p>
+          <br>
         </div>
 
 
@@ -98,4 +174,5 @@
 
   @@include('_include/page_bottom.html')
 </body>
+
 </html>

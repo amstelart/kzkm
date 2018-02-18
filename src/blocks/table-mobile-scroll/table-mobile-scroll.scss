@@ -47,4 +47,9 @@ $border-color:                hsl(0, 0%, 60%) !default;
     border-top: 1px solid #e2e2e4;
     caption-side: top;
   }
+
+  &__calc {
+    padding: 0 20px 0 20px;
+    background: #eee;
+  }
 }

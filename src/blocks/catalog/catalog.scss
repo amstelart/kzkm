@@ -10,6 +10,7 @@
 
   .catalog-card {
     @include col();
+    @include col(xl, 3);
     @include col(lg, 4);
     @include col(sm, 6);
     @include col(xs, 12);

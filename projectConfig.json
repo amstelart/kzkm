@@ -76,7 +76,9 @@
     "category-card": [],
     "articles": [],
     "two-pictures": [],
-    "table-relative": []
+    "table-relative": [],
+    "doc-carousel": [],
+    "table-calc": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

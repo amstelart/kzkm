@@ -31,9 +31,10 @@ $( document ).ready(function() {
   });
   $(".doc-carousel").owlCarousel({
     items: 3,
-    nav: false,
+    nav: true,
     margin: 20,
     loop: true,
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
     center: true,
     responsive : {
       0 : {
@@ -55,6 +56,35 @@ $( document ).ready(function() {
       },
       1800 : {
         items: 3,
+      }
+    }
+  });
+  $(".more-category__carousel").owlCarousel({
+    items: 3,
+    nav: false,
+    margin: 20,
+    loop: true,
+    center: false,
+    responsive : {
+      0 : {
+        items: 2,
+        loop: true,
+        center: true,
+      },
+      480 : {
+        items: 3,
+      },
+      768 : {
+        items: 3,
+      },
+      992 : {
+        items: 3,
+      },
+      1200 : {
+        items: 4,
+      },
+      1800 : {
+        items: 4,
       }
     }
   });
