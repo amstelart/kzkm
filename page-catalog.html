@@ -66,7 +66,7 @@
                   </svg>
                   +7 (4172) 308 333
                 </div>
-                <div class="main-info__item main-info__item--call"><button class="btn btn--black-outline">Заказать звонок</button></div>
+                <div class="main-info__item main-info__item--call"><button class="btn btn--black-outline" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button></div>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@
               </a>
             </li>
           </ul>
-          <a class="main-nav__download" href="#">Скачать прайс лист</a>
+          <a class="main-nav__download" href="#" download="">Скачать прайс лист</a>
         </nav>
       </div>
       <main role="main">
@@ -425,7 +425,7 @@
                   </svg>
                   +7 (4172) 308 333
                 </div>
-                <div class="main-info__item main-info__item--call"><button class="btn btn--white-outline">Заказать звонок</button></div>
+                <div class="main-info__item main-info__item--call"><button class="btn btn--white-outline" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button></div>
               </div>
             </div>
             <div class="page-footer__links">
@@ -456,6 +456,41 @@
           <div class="page-copiright__inner">
             <div class="page-copiright__item">ООО «Курский завод композитных материалов» 2018 ©</div>
             <div class="page-copiright__item">Разработка - Showbiz Studio</div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+              <h2 class="modal__title">Заказать звонок</h2>
+            </div>
+            <div class="modal__body">
+              <form action="" class="slider-form">
+                <label class="field-text slider-form__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text slider-form__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" placeholder="Ваш телефон" id="" name="">
+                  </span>
+                </label>
+                <div class="field-actions slider-form__field">
+                  <button class="btn btn--main btn--block">Заказать звонок</button>
+                </div>
+                <div class="field-checkbox slider-form__field">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                    <span class="field-checkbox__name-text">Я соглашаюсь на обработку персональных данных. Политика конфиденциальности</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal__footer">
+            </div>
           </div>
         </div>
       </div>
