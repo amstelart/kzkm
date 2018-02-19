@@ -20,6 +20,15 @@
   min-width: 320px;
   min-height: 100%;
 
+  &__main-nav {
+    background: $color-main;
+    padding: 20px 0;
+    min-height: 55px;
+    @media (max-width: ($menu-desktop-width - 1)) {
+      padding: 10px 0;
+    }
+  }
+
   &__inner {
     min-height: 100vh;
     display: flex;
@@ -122,11 +131,4 @@ img {
       left: 0;
     }
   }
-}
-
-.demo-main-slider {
-  background: #444;
-  display: block;
-  height: 622px;
-  margin-bottom: 40px;
 }

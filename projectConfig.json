@@ -78,7 +78,10 @@
     "two-pictures": [],
     "table-relative": [],
     "doc-carousel": [],
-    "table-calc": []
+    "table-calc": [],
+    "main-slider": [],
+    "slider-form": [],
+    "slider-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
