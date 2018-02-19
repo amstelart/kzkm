@@ -10,6 +10,10 @@
   margin: 0 auto 80px auto;
   padding: 0 60px;
 
+  @media (max-width: $screen-sm) {
+    padding: 0;
+  }
+
   .owl-nav {
     .owl-prev,
     .owl-next {
