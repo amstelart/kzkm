@@ -27,21 +27,26 @@
   }
 
   &__name {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.4;
+    min-height: 50px;
     color: #000;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__info {
     color: #a6a6a6;
     margin-bottom: 15px;
+
+    .dia {
+      font-size: 24px;
+    }
   }
 
   &__price {
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     span {
       position: relative;

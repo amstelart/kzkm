@@ -97,15 +97,15 @@ $( document ).ready(function() {
     center: false,
     responsive : {
       0 : {
-        items: 2,
+        items: 1,
         loop: true,
         center: true,
       },
       480 : {
-        items: 3,
+        items: 1,
       },
       768 : {
-        items: 3,
+        items: 2,
       },
       992 : {
         items: 3,

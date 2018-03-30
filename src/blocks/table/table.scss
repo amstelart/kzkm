@@ -26,7 +26,7 @@ $field-padding-horizontal:    0.7em !default;
 
   caption {
     padding-top: 0.4em;
-    text-align: right;
+    text-align: center;
     caption-side: bottom;
     font-size: $font-size--small;
     line-height: 1em;
@@ -35,20 +35,27 @@ $field-padding-horizontal:    0.7em !default;
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
-    vertical-align: top;
-    border-bottom: 1px solid $border-color;
+    padding: 0.7em 0.9em;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e4;
 
-    &:not(:first-child) {
-      border-left: 1px solid $border-color;
+    &.td-item {
+      text-align: left;
+      min-width: 560px;
     }
+
+    // &:not(:first-child) {
+    //   border-left: 1px solid #e2e2e4;
+    // }
   }
 
   th {
-    text-align: left;
+    text-align: center;
   }
 
   &__header {
+    background: #ececec;
   }
 
   &__body {}

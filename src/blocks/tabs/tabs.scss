@@ -61,9 +61,10 @@ $field-padding-horizontal:    0.7em !default;
       border-right: none;
     }
 
-    @media (max-width: ($screen-md - 1)) {
+    @media (max-width: 850px) {
       flex-basis: 100%;
       margin: 0;
+      text-align: center;
 
       &:not(:last-child) {
         margin-bottom: 10px;
@@ -91,11 +92,16 @@ $field-padding-horizontal:    0.7em !default;
 
   &__link {
     display: block;
-    padding: $field-padding-vertical $field-padding-horizontal;
+    padding: 0.7em 1em;
+    font-size: 14px;
     color: #000;
     text-decoration: none;
     background-color: #c8c8c8;
     border-radius: 6px;
+
+    @media (max-width: ($screen-lg - 1)) {
+      font-size: 12px;
+    }
 
     &:hover,
     &:focus {
