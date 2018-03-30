@@ -10,6 +10,10 @@
   margin: 0 auto 80px auto;
   padding: 0 60px;
 
+  .item {
+    border: 2px solid #c6c6c6;
+  }
+
   @media (max-width: $screen-sm) {
     padding: 0;
   }
