@@ -6,21 +6,28 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @include row;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   &__info {
-    @include col();
-    @include col(lg, 4);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__map {
-    @include col();
-    @include col(lg, 8);
+
   }
 
   &__part {
-    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   }
   &__title {
     font-size: 24px;
