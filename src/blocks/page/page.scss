@@ -22,8 +22,8 @@
 
   &__main-nav {
     background: $color-main;
-    padding: 20px 0;
-    min-height: 55px;
+    padding: 6px 0;
+    min-height: 50px;
     @media (max-width: ($menu-desktop-width - 1)) {
       padding: 10px 0;
     }
