@@ -43,6 +43,7 @@ $border-radius:               3px !default;
     color: $text-color;
     background-color: darken($gray-lightest, 10%);
     border-color: darken($gray-lighter, 12%);
+    box-shadow: none !important;
   }
 
   &:active,
@@ -54,9 +55,9 @@ $border-radius:               3px !default;
   &:disabled {
     opacity: $opacity;
     cursor: not-allowed;
-    color: $text-color;
-    background-color: $gray-lightest;
-    border-color: $gray-lighter;
+    background-color: #9f9f9f;
+    border-color: #9f9f9f;
+    box-shadow: none;
 
     @at-root a.btn--disabled {
       pointer-events: none;
@@ -85,9 +86,21 @@ $border-radius:               3px !default;
 
     &--disabled,
     &:disabled {
-      color: #fff;
-      background-color: $color-main;
-      border-color: $color-main;
+      opacity: $opacity;
+      cursor: not-allowed;
+      background-color: #9f9f9f;
+      border-color: #9f9f9f;
+      box-shadow: none !important;
+
+      &:hover,
+      &:focus {
+        background-color: #9f9f9f;
+        border-color: #9f9f9f;
+      }
+
+      @at-root a.btn--disabled {
+        pointer-events: none;
+      }
     }
   }
 

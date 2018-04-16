@@ -36,22 +36,31 @@
   }
 
   &--header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+
     #{$block-name}__item {
+
+      margin: 0 0 10px 0;
+
       .icon {
         fill: #5b646a;
       }
-      @media (max-width: 810px) {
-        margin-bottom: 20px;
-        &--call {
-          margin-left: 0;
-          margin-bottom: 0;
-        }
-      }
-      @media (max-width: 589px) {
-        flex-basis: 100%;
-        font-size: 14px;
-        font-weight: 400;
-      }
+
+      // @media (max-width: 810px) {
+      //   margin-bottom: 20px;
+      //   &--call {
+      //     margin-left: 0;
+      //     margin-bottom: 0;
+      //   }
+      // }
+      //
+      // @media (max-width: 589px) {
+      //   flex-basis: 100%;
+      //   font-size: 14px;
+      //   font-weight: 400;
+      // }
     }
 
   }

@@ -26,6 +26,11 @@
     min-height: 50px;
     @media (max-width: ($menu-desktop-width - 1)) {
       padding: 10px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
   }
 

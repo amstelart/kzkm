@@ -8,4 +8,17 @@
 
   display: inline-block;
   white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+.logo-caption {
+  text-transform: uppercase;
+  text-transform: uppercase;
+  color: #d30920;
+  margin-bottom: 15px;
+  padding: 0 30px;
+
+  @media (max-width: 560px) {
+    padding: 0;
+  }
 }

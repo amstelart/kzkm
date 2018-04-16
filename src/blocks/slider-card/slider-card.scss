@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 20px;
 
   &__body {
@@ -27,6 +27,12 @@
     line-height: 1.2;
     color: #fdb730;
     margin-bottom: 30px;
+
+    &.old-price {
+      color: #a7a7a7;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
   }
 
   @media (max-width: $screen-sm) {
