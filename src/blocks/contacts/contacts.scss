@@ -11,6 +11,7 @@
   &__info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__map {
@@ -19,6 +20,7 @@
 
   &__part {
     position: relative;
+    flex-grow: 1px;
     padding-left: 30px;
     margin-right: 25px;
     margin-bottom: 20px;
