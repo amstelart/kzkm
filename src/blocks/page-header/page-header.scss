@@ -25,7 +25,7 @@
     // @include row;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     @media (max-width: ($menu-desktop-width - 1)) {

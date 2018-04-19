@@ -59,9 +59,9 @@ $field-padding-horizontal:    0.7em !default;
       min-width: 560px;
     }
 
-    // &:not(:first-child) {
-    //   border-left: 1px solid #e2e2e4;
-    // }
+    &:not(:first-child) {
+      border-left: 1px solid #e2e2e4;
+    }
   }
 
   th {
