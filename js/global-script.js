@@ -1,4 +1,8 @@
 // Если на проекте jQuery
+jQuery(function($){
+  $(".phone-mask").mask("+7(999) 999-9999");
+});
+
 $( document ).ready(function() {
   $("#main-slider").owlCarousel({
     items: 1,
