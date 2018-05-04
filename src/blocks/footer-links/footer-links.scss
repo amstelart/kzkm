@@ -6,9 +6,15 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  max-width: 645px;
   margin-top: 20px;
   display: flex;
+  width: 100%;
+  margin-left: 320px;
+
+  @media (max-width: ($screen-xl - 1)) {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 
   @media (max-width: 810px) {
     flex-direction: column;
@@ -16,6 +22,7 @@
 
   &__item {
     padding: 0 10px;
+    flex-grow: 1;
   }
 
   &__title {
@@ -30,6 +37,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
 
     li {
       line-height: 1.4;
@@ -45,22 +53,19 @@
         }
       }
     }
-  }
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    &--lg {
 
-    li {
-      line-height: 1.4;
-      margin-bottom: 0.8em;
-      a {
-        color: #5b5b5b;
-        font-size: 15px;
+      li {
+        margin-bottom: 20px;
 
-        &:hover,
-        &:focus {
+        a {
+          text-transform: uppercase;
+          display: block;
+          font-size: 15px;
+          line-height: 1.4;
+          font-weight: 400;
+          margin-bottom: 0.4em;
           color: #fff;
         }
       }
