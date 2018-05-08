@@ -12,11 +12,21 @@
 }
 
 .logo-caption {
-  text-transform: uppercase;
-  text-transform: uppercase;
-  color: #d30920;
   margin-bottom: 15px;
   padding: 0 30px;
+
+  span {
+    display: block;
+    font-size: 18px;
+
+    &:first-letter {
+      text-transform: uppercase;
+      color: #d30920;
+      font-weight: 500;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+  }
 
   @media (max-width: 560px) {
     padding: 0;
