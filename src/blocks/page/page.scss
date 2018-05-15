@@ -140,6 +140,7 @@ img {
 
 .messengers {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 10px;
 
@@ -156,5 +157,9 @@ img {
     &:focus {
       opacity: 0.6;
     }
+  }
+
+  &__phone {
+    min-width: 100%;
   }
 }
