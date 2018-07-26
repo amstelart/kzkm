@@ -52,6 +52,13 @@
           color: #fff;
         }
       }
+
+      &.active {
+
+        a {
+          color: #d30920;
+        }
+      }
     }
 
     &--lg {

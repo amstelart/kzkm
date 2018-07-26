@@ -12,6 +12,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+    }
   }
 
   &__map {
@@ -24,6 +28,10 @@
     padding-left: 30px;
     margin-right: 25px;
     margin-bottom: 20px;
+
+    @media (max-width: ($screen-lg - 1)) {
+      min-width: 46%;
+    }
 
     .icon {
       position: absolute;
@@ -38,12 +46,44 @@
   }
 
   @media (max-width: ($screen-lg - 1)) {
+
     &__part {
       margin-bottom: 15px;
     }
     &__title {
       font-size: 18px;
       font-weight: 500;
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+
+  }
+
+  &__row {
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e7e5e4;
+    }
+  }
+
+  &__info__title {
+    color: #da2638;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &--others {
+
+    #{$block-name}__info {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    #{$block-name}__part {
+      padding-left: 0;
+      margin-right: 90px;
     }
   }
 }

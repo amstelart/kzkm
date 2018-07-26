@@ -25,7 +25,7 @@
   &__wrap {
     @include container;
     position: relative;
-    z-index: 10;
+    z-index: 2;
     color: #fff;
   }
   &__inner {

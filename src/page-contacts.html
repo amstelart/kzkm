@@ -25,63 +25,138 @@
 
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-              <li class="breadcrumbs__item"><span class="breadcrumbs__link">Контакты</span></li>
+              <li class="breadcrumbs__item"><span class="breadcrumbs__link">Контактная информация</span></li>
             </ul>
 
           </div>
         </div>
 
         <div class="page__container">
-          <h1 class="page-title">Контакты</h1>
-          <div class="contacts">
-            <div class="contacts__info">
-              <div class="contacts__part">
-                <svg class="icon" width="17" height="24">
-                  <use xlink:href="img/sprite-svg.svg#icon-contact-map"></use>
-                </svg>
-                <div class="contacts__title">Адрес:</div>
-                <p>г. Курск, ул. 50-лет Октября, д.173-А</p>
-              </div>
-              <div class="contacts__part">
-                <svg class="icon" width="22" height="23">
-                  <use xlink:href="img/sprite-svg.svg#icon-contact-phone"></use>
-                </svg>
-                <div class="contacts__title">Телефоны:</div>
-                <p>+7 (919) 174-10-10</p>
-              </div>
-              <div class="contacts__part">
-                <svg class="icon" width="17" height="26">
-                  <use xlink:href="img/sprite-svg.svg#icon-contact-mobile"></use>
-                </svg>
-                <div class="contacts__title">Мессенджеры:</div>
-                <div class="messengers">
-                  <div class="messengers__item">
-                    <a href="#" class="messengers__link">
-                      <svg width="30" height="30">
-                        <use xlink:href="img/sprite-svg.svg#icon-social-wh"></use>
+          <h1 class="page-title">Контактная информация</h1>
+          <div class="tabs tabs--contacts">
+            <ul class="tabs__links" role="tablist">
+              <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                <a href="#contact-tab-01" class="tabs__link" data-toggle="tab" role="tab">Курск</a>
+              </li>
+              <li class="tabs__link-wrap" role="presentation">
+                <span data-target="#contact-tab-02" class="tabs__link" data-toggle="tab" role="tab">Курская область</span>
+              </li>
+              <li class="tabs__link-wrap" role="presentation">
+                <a href="#contact-tab-03" class="tabs__link" data-toggle="tab" role="tab">Регионы</a>
+              </li>
+            </ul>
+            <div class="tabs__content-wrapper">
+              <div class="tabs__content-item tabs__content-item--active" id="contact-tab-01" role="tabpanel">
+                <div class="contacts">
+                  <div class="contacts__info">
+                    <div class="contacts__part">
+                      <svg class="icon" width="17" height="24">
+                        <use xlink:href="img/sprite-svg.svg#icon-contact-map"></use>
                       </svg>
-                    </a>
+                      <div class="contacts__title">Адрес:</div>
+                      <p>г. Курск, ул. 50-лет Октября, д.173-А</p>
+                    </div>
+                    <div class="contacts__part">
+                      <svg class="icon" width="22" height="23">
+                        <use xlink:href="img/sprite-svg.svg#icon-contact-phone"></use>
+                      </svg>
+                      <div class="contacts__title">Телефоны:</div>
+                      <p>+7 (919) 174-10-10</p>
+                    </div>
+                    <div class="contacts__part">
+                      <svg class="icon" width="17" height="26">
+                        <use xlink:href="img/sprite-svg.svg#icon-contact-mobile"></use>
+                      </svg>
+                      <div class="contacts__title">Мессенджеры:</div>
+                      <div class="messengers">
+                        <div class="messengers__item">
+                          <a href="#" class="messengers__link">
+                            <svg width="30" height="30">
+                              <use xlink:href="img/sprite-svg.svg#icon-social-wh"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="messengers__item">
+                          <a href="#" class="messengers__link">
+                            <svg width="28" height="29">
+                              <use xlink:href="img/sprite-svg.svg#icon-social-vi"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contacts__part">
+                      <svg class="icon" width="21" height="16">
+                        <use xlink:href="img/sprite-svg.svg#icon-contact-email"></use>
+                      </svg>
+                      <div class="contacts__title">E-mail:</div>
+                      <p><a href="mailto:zakaz@kzkm.org">zakaz@kzkm.org</a></p>
+                    </div>
                   </div>
-                  <div class="messengers__item">
-                    <a href="#" class="messengers__link">
-                      <svg width="28" height="29">
-                        <use xlink:href="img/sprite-svg.svg#icon-social-vi"></use>
-                      </svg>
-                    </a>
+                  <div class="contacts__map">
+                    <div id="map">
+                      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A414bbb2f4d6104b6b5d7e8c370403a24063ab05dd3a609d139fffb2619409c03&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="contacts__part">
-                <svg class="icon" width="21" height="16">
-                  <use xlink:href="img/sprite-svg.svg#icon-contact-email"></use>
-                </svg>
-                <div class="contacts__title">E-mail:</div>
-                <p><a href="mailto:zakaz@kzkm.org">zakaz@kzkm.org</a></p>
+              <div class="tabs__content-item" id="contact-tab-02" role="tabpanel">
+                <div class="contacts--others">
+                  <div class="contacts__row">
+                    <h3 class="contacts__info__title">Железногорск</h3>
+                    <div class="contacts__info">
+                      <div class="contacts__part">
+                        <p>Курасов А.С., ИП</p>
+                        <p>Железногорск, ул. Цветочная, д. 6, оф. 99</p>
+                        <p>+7 920-333-33-33</p>
+                      </div>
+                      <div class="contacts__part">
+                        <p>«СтройМетиз», ООО</p>
+                        <p>Железногорск, Киевский пр-т, 102, д. 56</p>
+                        <p>+7 (47148) 43-12-99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__row">
+                    <h3 class="contacts__info__title">Фатеж</h3>
+                    <div class="contacts__info">
+                      <div class="contacts__part">
+                        <p>«Экорт», ООО</p>
+                        <p>Курская область, Фатежский район, д.Сухочево</p>
+                        <p>+7 (47144) 2-17-77</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="contacts__map">
-              <div id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A414bbb2f4d6104b6b5d7e8c370403a24063ab05dd3a609d139fffb2619409c03&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+              <div class="tabs__content-item" id="contact-tab-03" role="tabpanel">
+                <div class="contacts--others">
+                  <div class="contacts__row">
+                    <h3 class="contacts__info__title">Воронеж</h3>
+                    <div class="contacts__info">
+                      <div class="contacts__part">
+                        <p>«ЭнергияЛаб», ООО</p>
+                        <p>Воронеж, ул. Загородная, 26А</p>
+                        <p>8 (800) 250-36-31</p>
+                      </div>
+                      <div class="contacts__part">
+                        <p>«Алмакс», ООО</p>
+                        <p>Воронеж, ул. Землячки, 1</p>
+                        <p>+7 (4732) 18-02-99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__row">
+                    <h3 class="contacts__info__title">Белгород</h3>
+                    <div class="contacts__info">
+                      <div class="contacts__part">
+                        <p>«БелТехСнаб», ООО</p>
+                        <p>Белгород, ул. Восточная, д. 5</p>
+                        <p>+7 (4722) 22-33-44</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

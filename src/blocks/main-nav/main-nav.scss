@@ -25,6 +25,7 @@ $transition-time:             0.3s !default;
   @include container;
   z-index: 10;
   display: flex;
+  align-items: center;
 
   // первый уровень
   &__list {
@@ -64,13 +65,14 @@ $transition-time:             0.3s !default;
       flex-wrap: wrap;
 
       #{$block-name}__link {
+
         &--arrow {
-          padding-right: 1.7em;
+          padding-right: 2em;
 
           &:after {
             content: '';
             position: absolute;
-            right: 8px;
+            right: 10px;
             top: 50%;
             width: 10px;
             height: 10px;
@@ -78,6 +80,16 @@ $transition-time:             0.3s !default;
             border-right: 2px solid #fff;
             transform: translateY(-90%) rotate(45deg);
             transition: transform $transition-time, border-color $transition-time;
+          }
+        }
+      }
+
+      #{$block-name}__item {
+
+        &--active {
+
+          .main-nav__link--arrow:after {
+            border-color: #d30920;
           }
         }
       }
@@ -94,7 +106,12 @@ $transition-time:             0.3s !default;
     &--active {
 
       & > #{$block-name}__link {
-        color: #fdb730;
+        color: #d30920;
+        background: #e4e3e4;
+      }
+
+      .main-nav__link--arrow:after {
+        border-color: #d30920;
       }
     }
   }
@@ -123,7 +140,7 @@ $transition-time:             0.3s !default;
 
   &__link {
     display: block;
-    padding: 0.5em 1.7em;
+    padding: 0.8em 1.7em;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -156,7 +173,7 @@ $transition-time:             0.3s !default;
         position: absolute;
         top: 100%;
         left: 0;
-        z-index: 1;
+        z-index: 100;
         opacity: 0;
         background: $color-main;
         height: 0;
