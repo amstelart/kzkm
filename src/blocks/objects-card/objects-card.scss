@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока objects-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.objects-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrap {
+    @include row;
+  }
+
+  @include col();
+  @include col(lg, 4);
+  @include col(md, 4);
+  @include col(sm, 6);
+  margin-bottom: 20px;
+
+  &__image {
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  &__info {
+    margin-bottom: 30px;
+  }
+
+}

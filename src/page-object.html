@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main role="main">
+
+        <div class="page__breadcrumbs">
+          <div class="page__container">
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="page-objects.html" class="breadcrumbs__link">Наши объекты</a></li>
+              <li class="breadcrumbs__item"><span class="breadcrumbs__link">Наименование объекта</span></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="page__container">
+          <h1 class="page-title">Наименование объекта</h1>
+          <div class="objects-card__info">
+            <p>ООО «Курский Завод Композитных Материалов» основан в 2015 году, является одним из ведущих производителей современных строительных материалов в Центрально-Чернозёмном регионе.</p>
+            <p>В настоящее время производственные мощности завода включают в себя 2 современные линии по производству композитной арматуры диаметром от 4 мм. до 32 мм. производительностью 20 000 м/сутки.</p>
+            <p>В ближайшее время планируется расширение мощностей завода с целью производства композитной сетки — лёгкого, надёжного и экономичного материала для армирования стеновых и горизонтальных конструкций в строительстве.</p>
+          </div>
+          <div class="objects-gallery">
+            <div class="objects-gallery__item">
+              <a href="img/objects-big-gallery-image-01.jpg" data-fancybox="objects-gallery">
+                <img src="img/objects-gallery-image-01.jpg" width="178px" height="178px" alt="">
+              </a>
+            </div>
+            <div class="objects-gallery__item">
+              <a href="img/objects-big-gallery-image-01.jpg" data-fancybox="objects-gallery">
+                <img src="img/objects-gallery-image-01.jpg" width="178px" height="178px" alt="">
+              </a>
+            </div>
+            <div class="objects-gallery__item">
+              <a href="img/objects-big-gallery-image-01.jpg" data-fancybox="objects-gallery">
+                <img src="img/objects-gallery-image-01.jpg" width="178px" height="178px" alt="">
+              </a>
+            </div>
+            <div class="objects-gallery__item">
+              <a href="img/objects-big-gallery-image-01.jpg" data-fancybox="objects-gallery">
+                <img src="img/objects-gallery-image-01.jpg" width="178px" height="178px" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

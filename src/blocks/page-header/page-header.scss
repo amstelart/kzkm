@@ -10,9 +10,11 @@
   color: #5b646a;
   padding-top: 25px;
   padding-bottom: 20px;
+  height: 152px;
 
   @media (max-width: ($menu-desktop-width - 1)) {
     padding-top: 70px;
+    height: auto;
 
     .btn--black-outline {
       min-width: auto;

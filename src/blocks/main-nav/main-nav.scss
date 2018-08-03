@@ -67,7 +67,7 @@ $transition-time:             0.3s !default;
       #{$block-name}__link {
 
         &--arrow {
-          padding-right: 2em;
+          // padding-right: 30px;
 
           &:after {
             content: '';
@@ -79,7 +79,7 @@ $transition-time:             0.3s !default;
             border-bottom: 2px solid #fff;
             border-right: 2px solid #fff;
             transform: translateY(-90%) rotate(45deg);
-            transition: transform $transition-time, border-color $transition-time;
+            // transition: transform $transition-time, border-color $transition-time;
           }
         }
       }
@@ -107,7 +107,7 @@ $transition-time:             0.3s !default;
 
       & > #{$block-name}__link {
         color: #d30920;
-        background: #e4e3e4;
+        background: #c5c5c5;
       }
 
       .main-nav__link--arrow:after {
@@ -148,9 +148,13 @@ $transition-time:             0.3s !default;
 
     &:hover,
     &:focus {
+      color: #d30920;
+      background: #e4e3e4;
       text-decoration: none;
-      color: #fff;
-      opacity: 0.7;
+
+      &.main-nav__link--arrow:after {
+        border-color: #d30920;
+      }
     }
 
     &--lvl-2 {

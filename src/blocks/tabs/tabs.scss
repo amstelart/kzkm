@@ -34,6 +34,39 @@ $field-padding-horizontal:    0.7em !default;
 
   &__gallery {
     margin-bottom: 25px;
+
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        background: #fff;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+
+        svg {
+          transition: all 0.3s;
+          stroke: #000;
+        }
+
+        &:hover,
+        &:focus {
+          svg {
+            stroke: $color-main;
+          }
+        }
+      }
+
+      .owl-prev {
+        left: -10px;
+      }
+
+      .owl-next {
+        right: -10px;
+      }
+    }
   }
 
   &__links {
