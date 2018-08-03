@@ -291,6 +291,15 @@ $(".menu-item-has-children > a").addClass('main-nav__link main-nav__link--arrow'
       }
     }
   });
+
+  $(function() {
+    $('nav#mobile-menu').mmenu({
+      navbar: {
+        title: 'Меню'
+      }
+    });
+  });
+
   $(".tabs__gallery").owlCarousel({
     items: 3,
     nav: true,
