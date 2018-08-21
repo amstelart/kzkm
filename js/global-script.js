@@ -1,5 +1,19 @@
 // Если на проекте jQuery
  jQuery(function($){
+$("#mobile-menu .main-nav__item--has-child > a").wrapInner('<span></span>');
+	$("#mobile-menu .main-nav__item--has-child > a span").unwrap();
+$("#mobile-menu ul li").attr('class', '');
+
+	 	  $(function() {
+    $('nav#mobile-menu').mmenu({
+      navbar: {
+        title: 'Меню'
+      },
+      classNames: {
+         selected: "active"
+      }
+    });
+  });
   $(".phone-maskdddd").mask("+7(999) 999-9999");
 
 	 // mask fields
@@ -252,8 +266,8 @@ $('.wpcf7-list-item-label').on('click',function(e){
     $(this).parent().toggleClass('wpcf7-list-item-active');
 	$(this).parent().find('input').click();
 });
-
-
+$('.wpcf7-list-item-label').addClass('field-checkbox__name-text');
+$('.field-checkbox__name-text').removeClass('wpcf7-list-item-label');
 	$(".sub-menu").show();
 $(".article ul"). addClass("list");
 	$(".tabs__content-item ul"). addClass("list");
@@ -267,6 +281,9 @@ $(".menu-item-has-children > a").addClass('main-nav__link main-nav__link--arrow'
 	$(".main-nav__sublist-wrapper ul").addClass("main-nav__list  main-nav__list--lvl-2");
 	$(".main-nav__sublist-wrapper ul li").addClass("main-nav__item--lvl-2");
 		$(".main-nav__sublist-wrapper ul li a").addClass("main-nav__link--lvl-2");
+
+
+
   $("#main-slider").owlCarousel({
     items: 1,
     nav: false,
@@ -292,16 +309,6 @@ $(".menu-item-has-children > a").addClass('main-nav__link main-nav__link--arrow'
     }
   });
 
-  $(function() {
-    $('nav#mobile-menu').mmenu({
-      navbar: {
-        title: 'Меню'
-      },
-      classNames: {
-         selected: "active"
-      }
-    });
-  });
 
   $(".tabs__gallery").owlCarousel({
     items: 3,
