@@ -296,6 +296,9 @@ $(".menu-item-has-children > a").addClass('main-nav__link main-nav__link--arrow'
     $('nav#mobile-menu').mmenu({
       navbar: {
         title: 'Меню'
+      },
+      classNames: {
+         selected: "active"
       }
     });
   });
