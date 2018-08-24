@@ -11,3 +11,8 @@
 .mm-slideout {
   z-index: inherit;
 }
+
+.mm-listitem_selected,
+.mm-listitem_selected a {
+  color: #d30920;
+}
