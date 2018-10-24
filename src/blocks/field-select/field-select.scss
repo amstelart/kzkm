@@ -63,4 +63,21 @@ $border-radius:               3px !default;
   &__help-text {
     @include field-help-text;
   }
+
+  &--calc {
+
+    min-width: 85px;
+
+    #{$block-name}__select {
+      padding: 4px 20px 4px 8px;
+      background-image: svg-load('../blocks/field-select/img_to_bg/select-down-light.svg');
+      background-size: 1.4em 1em;
+
+      &:active,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
 }

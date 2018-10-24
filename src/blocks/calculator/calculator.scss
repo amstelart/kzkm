@@ -1,0 +1,69 @@
+// В этом файле должны быть стили для БЭМ-блока calculator, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.calculator {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 2.5em 0;
+
+  &__table {
+
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    background: #fcf8f8;
+
+    th,
+    td {
+      // border: none;
+      text-align: center;
+      padding: 10px;
+      vertical-align: top;
+      min-width: 80px;
+    }
+
+    .br-r {
+      border-right: 2px solid #fff;
+    }
+
+    .br-b {
+      border-bottom: 1px solid #fff;
+    }
+
+    .br-t {
+      border-top: 1px solid #fff;
+    }
+
+    .block-input {
+      background: #f7d9da;
+    }
+    .block-composite {
+      background: #e2dfdf;
+    }
+    .block-calc {
+      background: #caceb8;
+
+      &--xl {
+        font-size: 21px;
+      }
+    }
+    .block-title {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  thead {
+    th {
+      font-weight: 400;
+    }
+  }
+
+  tfoot {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+}

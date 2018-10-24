@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content=""> @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html') @@include('blocks/main-nav/main-nav.html')
+
+      <main role="main">
+
+        <div class="page__breadcrumbs">
+          <div class="page__container">
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Полезная информация</a></li>
+              <li class="breadcrumbs__item"><span class="breadcrumbs__link">Калькулятор композитной арматуры</span></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="page__container">
+          <h1 class="page-title">Калькулятор расчета композитной арматуры</h1>
+          <p>Введите необходимое число погонных метров или вес стальной арматуры. Калькулятор подберет равнопрочную замену стальной арматуры на композитную, рассчитает ваши затраты на приобретение композитной арматуры и экономию от замены.</p>
+
+          <div class="calculator" style="font-size: 12px;">
+            <form action="" class="calculator__form">
+              <div class="table-mobile-scroll">
+                <table class="calculator__table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="block-input block-title br-r" colspan="4">Статьная арматура</th>
+                      <th class="block-composite block-title br-r" colspan="4">Композитная арматура</th>
+                      <th class="block-calc block-title" colspan="4">Калькулятор*</th>
+                    </tr>
+                    <tr>
+                      <th>П/п</th>
+                      <th class="block-input br-b">Потребность, п.м</th>
+                      <th class="block-input br-b">Потребность, кг</th>
+                      <th class="block-input br-b">Диаметр, мм</th>
+                      <th class="block-input br-b br-r">Цена руб/п.м</th>
+                      <th class="block-composite br-b">Потребность, п.м</th>
+                      <th class="block-composite br-b">Потребность, кг</th>
+                      <th class="block-composite br-b">Диаметр, мм</th>
+                      <th class="block-composite br-b br-r">Цена руб/п.м</th>
+                      <th class="block-calc br-b">Стоимость стальной арматуры, руб.</th>
+                      <th class="block-calc br-b">Стоимость композитной арматуры, руб.</th>
+                      <th class="block-calc br-b">Экономия от замены, руб.</th>
+                      <th class="block-calc br-b">Экономия от замены, %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input class="field-calc__input" type="number" value="10" id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input disabled class="field-calc__input" type="number"  id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-select field-select--calc">
+                          <div class="field-select__select-wrap">
+                            <select class="field-select__select" id="" name="">
+                              <option></option>
+                              <option>АIII-8</option>
+                              <option>АIII-14</option>
+                              <option>АIII-16</option>
+                            </select>
+                          </div>
+                        </label>
+                      </td>
+                      <td class="block-input br-r">50.6</td>
+                      <td class="block-composite">10</td>
+                      <td class="block-composite">0</td>
+                      <td class="block-composite">АСК-6</td>
+                      <td class="block-composite br-r">13.2</td>
+                      <td class="block-calc">506</td>
+                      <td class="block-calc">132</td>
+                      <td class="block-calc">374</td>
+                      <td class="block-calc">30</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input class="field-calc__input" type="number" value="0" id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input class="field-calc__input" type="number" value="0" id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-select field-select--calc">
+                          <div class="field-select__select-wrap">
+                            <select class="field-select__select" id="" name="">
+                              <option></option>
+                              <option>АIII-8</option>
+                              <option>АIII-14</option>
+                              <option>АIII-16</option>
+                            </select>
+                          </div>
+                        </label>
+                      </td>
+                      <td class="block-input br-r">0</td>
+                      <td class="block-composite">0</td>
+                      <td class="block-composite">0</td>
+                      <td class="block-composite"></td>
+                      <td class="block-composite br-r">0</td>
+                      <td class="block-calc">0</td>
+                      <td class="block-calc">0</td>
+                      <td class="block-calc">0</td>
+                      <td class="block-calc">0</td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input disabled class="field-calc__input" type="number" id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-calc">
+                          <span class="field-calc__input-wrap">
+                            <input class="field-calc__input" type="number" value="10" id="" name="">
+                          </span>
+                        </label>
+                      </td>
+                      <td class="block-input">
+                        <label class="field-select field-select--calc">
+                          <div class="field-select__select-wrap">
+                            <select class="field-select__select" id="" name="">
+                              <option></option>
+                              <option>АIII-8</option>
+                              <option>АIII-14</option>
+                              <option>АIII-16</option>
+                            </select>
+                          </div>
+                        </label>
+                      </td>
+                      <td class="block-input br-r">28</td>
+                      <td class="block-composite">0</td>
+                      <td class="block-composite">10</td>
+                      <td class="block-composite">АСК-10</td>
+                      <td class="block-composite br-r">11,5</td>
+                      <td class="block-calc">308</td>
+                      <td class="block-calc">201</td>
+                      <td class="block-calc">107</td>
+                      <td class="block-calc">10</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="br-t">Итого:</td>
+                      <td class="block-input br-t">10</td>
+                      <td class="block-input br-t">10</td>
+                      <td class="block-input br-t"></td>
+                      <td class="block-input br-t br-r">78,6</td>
+                      <td class="block-composite br-t">10</td>
+                      <td class="block-composite br-t">10</td>
+                      <td class="block-composite br-t"></td>
+                      <td class="block-composite br-t br-r">24,7</td>
+                      <td class="block-calc br-t">814</td>
+                      <td class="block-calc br-t">333</td>
+                      <td class="block-calc block-calc--xl br-t">481</td>
+                      <td class="block-calc block-calc--xl br-t">40</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </form>
+          </div>
+
+          <p class="light-text mb30">* Стоимость стальной арматуры взята из открытых источников металлоторгующих организаций г. Курска.<br>
+          Расчет в калькуляторе — предварительный, произведен из расчета розничных цен на АСК и может быть скорректирован при покупке оптовых партий АСК. <br>
+          Окончательную стоимость заказа вы можете уточнить по телефонам 8 (800) 234-34-02, 8-910-022-83-33.</p>
+        </div>
+
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mobile-menu/mobile-menu.html')
+  @@include('_include/page_bottom.html')
+</body>
+
+</html>

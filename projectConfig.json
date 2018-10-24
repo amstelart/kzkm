@@ -86,7 +86,9 @@
     "objects-card": [],
     "social": [],
     "objects-gallery": [],
-    "mobile-menu": []
+    "mobile-menu": [],
+    "calculator": [],
+    "field-calc": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
