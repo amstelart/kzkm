@@ -30,11 +30,29 @@
   }
 
   &__links {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    @media (max-width: 810px) {
-      flex-direction: column;
+    @include row;
+    margin: 20px 0 0 0;
+
+    .footer-links__item {
+      @include col();
+      @include col(xl, 3);
     }
   }
+
+  .footer-links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .btn--calculator {
+      color: #fff;
+      max-width: 115px;
+
+      &:hover,
+      &:focus {
+        background: #4d4d4d;
+      }
+    }
+  }
+
 }

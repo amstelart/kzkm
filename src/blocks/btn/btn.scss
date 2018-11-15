@@ -141,4 +141,27 @@ $border-radius:               3px !default;
   &--block {
     width: 100%;
   }
+
+  &--calculator {
+    border: none;
+    font-size: 12px;
+    padding: 0.2em 0.4em;
+    white-space: normal;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    background: transparent;
+    line-height: 1.1;
+
+    &:hover,
+    &:focus {
+      background: #ececec;
+    }
+
+    .icon {
+      flex-shrink: 0;
+      margin-right: 6px;
+    }
+
+  }
 }

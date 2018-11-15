@@ -67,6 +67,7 @@ $border-radius:               3px !default;
   &--calc {
 
     min-width: 85px;
+    margin-bottom: 0;
 
     #{$block-name}__select {
       padding: 4px 20px 4px 8px;

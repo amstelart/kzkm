@@ -88,7 +88,8 @@
     "objects-gallery": [],
     "mobile-menu": [],
     "calculator": [],
-    "field-calc": []
+    "field-calc": [],
+    "social-links": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

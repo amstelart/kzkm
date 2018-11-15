@@ -7,6 +7,38 @@
   $block-name:                &; // #{$block-name}__element
 
   margin: 2.5em 0;
+  display: flex;
+
+  .s-cell {
+    width: 90px;
+  }
+
+  .xl-hide {
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    flex-wrap: wrap;
+  }
+
+  &__part {
+    @media (max-width: ($screen-xl - 1)) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .table-mobile-scroll {
+
+    margin: 5px 0;
+
+    @media (min-width: $screen-xl) {
+      margin: 0;
+      border: none;
+    }
+  }
 
   &__table {
 
@@ -14,6 +46,24 @@
     width: 100%;
     font-size: 12px;
     background: #fcf8f8;
+
+    thead {
+      tr:last-child {
+        th {
+
+          @media (min-width: $screen-xl) {
+            height: 110px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      td {
+        height: 55px;
+        vertical-align: middle;
+      }
+    }
 
     th,
     td {
