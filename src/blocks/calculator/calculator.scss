@@ -87,16 +87,17 @@
     }
 
     .block-input {
-      background: #f7d9da;
-    }
-    .block-composite {
       background: #e2dfdf;
     }
-    .block-calc {
+    .block-composite {
       background: #caceb8;
+    }
+    .block-calc {
+      background: #e2dfdf;
 
       &--xl {
         font-size: 21px;
+        color: #d30920;
       }
     }
     .block-title {
